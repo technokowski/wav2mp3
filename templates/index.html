@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="smallbody">
+  <br>
+  <h1>Upload WAV File For Conversion To Mp3</h1>
+  <br>
+  <div>
+    <form action="/transform" method="post" enctype="multipart/form-data">
+      <div>
+        <input type="file" name="data_file"/>
+      </div>
+      <br>
+      <div>
+        <input type="submit" value="Submit File"/>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
