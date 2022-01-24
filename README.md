@@ -22,14 +22,14 @@ The requirements for this to work is that the server must have ffmpeg installed,
 I designed this using Fedora 35, and added the ffmpeg library using the following:
 
 Add the repos:
-'''
+```
 sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-'''
+```
 Instll ffmpeg:
-'''
+```
 sudo dnf -y install ffmpeg
 sudo dnf -y install ffmpeg-devel
-'''
+```
 
 Depending on your deployment, you may need to repeat this on your server. I have not tested this on macOS or Windows. 
